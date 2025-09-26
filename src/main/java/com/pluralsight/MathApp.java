@@ -41,14 +41,44 @@ public class MathApp {
 
         // 5 find and print the distance between the points (5, 10) and (85, 50)
         int x1 = 5;
-        int x2 = 10;
-        int y1 = 85;
+        int y1 = 10;
+        int x2 = 85;
         int y2 = 50;
-        double distance = Math.sqrt(Math.pow(x2- x1,2) + Math.pow(y2 - y1,2));
+        double distance = Math.sqrt(Math.pow(x2 - x1,2) + Math.pow(y2 - y1,2));
 
         System.out.println("The distance between the two points is " + distance);
 
         // 6 find and display the absolute ( positive ) value of a variable after it is set to -3.8
+        double number = -3.8;
+        double absNum = Math.abs(number);
+
+        System.out.println("the absolute value is " + absNum);
+
+        // 7 find random number between 0 and 1 and print
+
+        double ranNum = Math.random();
+
+        System.out.println("The number I chose is " + ranNum);
+
+        // 8 calculate how many minutes are in 24 days, use a variable for each value
+
+        int days = 24;
+        int hoursPerDay = 24;
+        int minutesPerHour = 60;
+        int secondsPerMinute = 60;
+        int millisecondsPerSecond = 1000;
+
+        // how manny hours are in 24 days; multiply number of days by hours in a day (576)
+        // how many minutes are in 576 hours, (576 * 60 )
+        // how many seconds are in 34,560 ( 34,560 * 60 )
+        // how many milliseconds are in ( 2,073,600 * 1000 )
+
+        int totalMinutes = days * hoursPerDay * minutesPerHour;
+        int totalMilliseconds = totalMinutes * secondsPerMinute * millisecondsPerSecond;
+
+        System.out.println("There are " + totalMinutes + " minutes in 24 days");
+        System.out.println("There are " + totalMilliseconds + " milliseconds in 24 days ");
+
 
 
 
